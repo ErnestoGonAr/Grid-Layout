@@ -5,14 +5,10 @@ import javax.swing.*;
 	public class CalculadoraGrid extends JFrame{
 
 	JButton ki=new JButton("de");
-//	ki.addMouseListener(this);
 	public CalculadoraGrid(){
 	super("Calculadora");
 	setSize(500,500);
 	setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//	FlowLayout p= new FlowLayout();
-//	JPanel f2= new JPanel();
-//	f2.setLayout(p);
 	JPanel f= new JPanel();
 	GridLayout num= new GridLayout(5,3);
 	f.setLayout(num);
@@ -24,11 +20,6 @@ import javax.swing.*;
 	f.add(noMore);
 	JButton one= new JButton("1");
 	f.add(one);
-//	ki.addMouseListener(this);
-//	one.addActionListener(new ActionListener(){
-//		public void actionPerfomed(ActionEvent e){
-//		System.exit(0);}});
-	
 	JButton two= new JButton("2");
 	f.add(two);
 	JButton three=new JButton("3");
@@ -52,19 +43,8 @@ import javax.swing.*;
 	JButton igual=new JButton("=");
 	f.add(igual);
 	add(f);
-//	add(f2);
 	setVisible(true);
 }
-/*	public void actionPerformed(ActionEvent e){
-	if(e.getSourse()==ki){
-	System.exit(0);
-	}
-	}
-	public void mouseClicked(MouseEvent e){
-	if(e.getSourse()==ki){
-	j.setText("hey");}
-	}*/
-
 	public float suma(float a,float b){
 		float r;
 		r=a+b;
